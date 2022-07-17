@@ -77,24 +77,22 @@ h1{
   color:var(--Gray);
   padding-bottom:20px;
 }
-#second{
+#btn-pink{
   float:left;
   background:linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
   border-radius: 31.5px;  
 }
 .cards-container{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
+  display: grid;
+  grid-template-columns: auto auto auto;
   align-items:baseline;
   margin-top:250px;
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
   padding: 0 100px 0 100px;
   align-items:center;
-    display: grid;
-   grid-template-columns: auto auto auto;
+    
 }
-.cards{
+.card{
   height:300px;
   border-radius: 15px;
   max-width:350px;
@@ -132,7 +130,7 @@ h4{
   display:none;
 }
 
-.cards img{
+.card img{
   margin-top:-20px;
   padding-left:32px;
 }
@@ -152,7 +150,7 @@ button:hover{
 .nText{
   padding:64px 32px 0 32px;
 }
-#third{
+#btn-purple{
   background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
 .footer-el{
@@ -201,7 +199,10 @@ footer p{
   .girlimg{
   display:none;
 }
- 
+ .footer-el{
+  padding: 0 30px 0 30px;
+  padding-top:40px;
+}
 }
 @media only screen and (max-width: 767px) and (min-width: 375px){
   html, body{
@@ -247,6 +248,5 @@ footer p{
   .footer-el{
   padding: 0 16px 0 16px;
   padding-top:40px;
-
 }
 }
