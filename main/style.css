@@ -1,0 +1,250 @@
+:root {
+ 
+--Blue: hsl(234, 25%, 52%);
+--Dark-blue: hsl(233, 54%, 16%);
+--Gray: hsl(232, 10%, 56%);
+--Pink: hsl(341, 92%, 62%);
+--Light-pink: hsl(341, 100%, 83%);  
+  
+}
+*{
+  box-sizing: border-box;
+  margin:0 auto;
+  scroll-behavior:smooth;
+}
+html {
+  font-size: 18px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  width:100%;
+  height: 100vh;
+  background:url(../assets/image-hero-desktop.png);
+  background-repeat:no-repeat;
+  background-position: 50vw -30vh;
+}
+header{
+  align-items:center;
+  text-align:center;
+  padding: 0 100px 0 100px;
+  margin-top:66px;
+}
+header p{
+  display:inline;
+  float:left;
+  margin:0;
+  color: var(--Dark-blue);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 45px;
+}
+.button{
+  float:right;
+  margin:0;
+  background: var(--Dark-blue);
+  border-radius: 28px;
+  color:white;
+  font-size: 18px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight:700;
+  font-style: normal;
+  line-height: 28px; 
+  padding: 14px 32px;
+  border-style:none;
+}
+.main-txt{
+  margin:0;
+  padding-left:100px;
+  max-width:500px;
+  padding-top:186px;
+  
+}
+h1{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--Dark-blue);
+  padding-bottom:20px;
+}
+.main-p{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color:var(--Gray);
+  padding-bottom:20px;
+}
+#second{
+  float:left;
+  background:linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  border-radius: 31.5px;  
+}
+.cards-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:baseline;
+  margin-top:250px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+  padding: 0 100px 0 100px;
+  align-items:center;
+    display: grid;
+   grid-template-columns: auto auto auto;
+}
+.cards{
+  height:300px;
+  border-radius: 15px;
+  max-width:350px;
+  background: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  margin-bottom:50px;
+
+}
+h4{
+  color:var(--Dark-blue);
+  font-size: 24px;
+  padding-bottom:10px;
+}
+.text{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--Gray);
+  padding-bottom:20px;
+  }
+
+.started{
+  text-decoration:none;
+  color: var(--Pink);
+}
+.space{
+  padding:20px 32px 0px 32px;
+ 
+  
+}
+.girlimg{
+  display:none;
+}
+
+.cards img{
+  margin-top:-20px;
+  padding-left:32px;
+}
+button:hover{
+  opacity:0.5;
+  cursor:pointer;
+}
+#card-title{
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+.nText{
+  padding:64px 32px 0 32px;
+}
+#third{
+  background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+.footer-el{
+  height:120px;
+  padding: 0 100px 0 100px;
+  background: var(--Dark-blue);
+  padding-top:40px;
+  
+}
+footer p{
+  display:inline;
+  float:left;
+  margin:0;
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 768px){
+  html{
+  background:url(../assets/image-hero-tablet.png);
+  background-repeat:no-repeat;
+  background-position: 50vw -10vh;
+  }
+  header{
+  padding: 0 30px 0 30px;
+  margin-top:40px;
+}
+  .main-txt{
+  margin:0;
+  padding-left:30px;
+  max-width:400px;
+  padding-top:150px;
+  
+}
+  .cards-container{
+  padding: 0 30px 0 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  
+}
+  .girlimg{
+  display:none;
+}
+ 
+}
+@media only screen and (max-width: 767px) and (min-width: 375px){
+  html, body{
+    background:none;
+    align-items:center;
+    overflow-x: hidden;
+    width:100%;
+  }
+  
+  .girlimg{
+    display:flex;
+    justify-content:center;
+    max-width:70%;
+  }
+ 
+  header{
+  padding: 0px 16px 0px 16px;
+  margin-top:16px;
+}
+ 
+  .main-txt{
+  margin:0;
+  padding-left:16px;
+  padding-right:16px;
+  padding-top:100px;
+  padding-bottom:100px;
+   
+}
+  .cards-container{
+  margin-top:50px;
+  padding: 0 16px 0 16px;
+  display:flex;
+  flex-direction:column;
+
+}
+  #card-title{
+    height:120px;
+  }
+  .nText{
+  padding:28px 24px 0 24px;
+  font-size: 24px;
+}
+  .footer-el{
+  padding: 0 16px 0 16px;
+  padding-top:40px;
+
+}
+}
